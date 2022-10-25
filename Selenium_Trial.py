@@ -8,7 +8,6 @@ def Find_Wealthiest_Merchant():
     riddle_3_wealth_1 = int(browser.find_element(By.XPATH, "//h2[contains(text(), 'The Two Merchants')]/.. /div[3]/p").text)
     riddle_3_name_2 = browser.find_element(By.XPATH, "//h2[contains(text(), 'The Two Merchants')]/.. /div[4]/span").text
     riddle_3_wealth_2 = int(browser.find_element(By.XPATH, "//h2[contains(text(), 'The Two Merchants')]/.. /div[4]/p").text)
-
     # Build dictionary based on the information pulled from the target website
     wealth_tracker = {riddle_3_name_1:riddle_3_wealth_1, riddle_3_name_2:riddle_3_wealth_2}
     # Get the wealthiest person from the key, based on the value pulled from the target website
